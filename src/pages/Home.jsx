@@ -5,10 +5,11 @@ export default function Home() {
   const [sender, setSender] = useState("");
   const [copied, setCopied] = useState(false);
 
-  const baseUrl = window.location.origin;
+  const baseUrl = `${window.location.origin}/valentine-invite`;
   const link = `${baseUrl}/#/view?name=${encodeURIComponent(
     name || "You"
   )}&sender=${encodeURIComponent(sender || "Someone")}`;
+
 
   const copyLink = async () => {
     await navigator.clipboard.writeText(link);
