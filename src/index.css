@@ -1,0 +1,179 @@
+body {
+  margin: 0;
+  background: #ffc0cb;
+  font-family: "Comic Sans MS", cursive;
+}
+
+/* MAIN CONTAINER */
+.valentine-container {
+  height: 100vh;
+  width: 100vw;
+  background: #ffc0cb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* TEXT */
+h1 {
+  color: #d10068;
+  margin-bottom: 10px;
+}
+
+/* BUTTON AREA */
+.buttons {
+  position: relative;
+  width: 100%;
+  height: 240px;
+}
+
+/* BUTTONS */
+button {
+  padding: 14px 28px;
+  font-size: 18px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+}
+
+/* YES */
+.yes {
+  background: #ff3366;
+  color: white;
+}
+
+/* YES hover wrapper */
+.yes-wrapper {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Hover preview */
+.hover-preview {
+  position: absolute;
+  top: 100%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hover-gif {
+  width: 140px;
+}
+
+/* NO */
+.no {
+  position: absolute;
+  background: white;
+  color: red;
+  transition: all 0.25s ease;
+}
+
+/* GIF */
+.valentine-gif {
+  width: 220px;
+  margin-bottom: 20px;
+}
+
+/* FINAL SCREEN */
+.final-screen {
+  justify-content: center;
+}
+
+.final-screen p {
+  font-size: 18px;
+  color: #444;
+}
+.final-gif {
+  width: 200px;
+  max-width: 80%;
+  margin-bottom: 16px;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0); }
+}
+
+.love-reveal {
+  margin-top: 20px;
+  font-size: 28px;
+  color: #d10068;
+  font-weight: bold;
+  opacity: 0;
+  animation: loveFadeIn 1.5s ease forwards;
+}
+
+@keyframes loveFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.create-container {
+  min-height: 100vh;
+  background: #ffc0cb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.title {
+  color: #d10068;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.preview {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.inputs {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+input {
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+}
+
+.link-box {
+  background: white;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-size: 14px;
+  margin-bottom: 14px;
+  max-width: 90%;
+  overflow-x: auto;
+}
+
+.copy-btn {
+  background: #ff3366;
+  color: white;
+  padding: 12px 22px;
+  font-size: 16px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+}
+
+
